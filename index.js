@@ -1,6 +1,7 @@
 // packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
 
 // an array of questions for user input
 const questions = [
@@ -61,13 +62,20 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        // if an error occurs message appears with error attached
+    const dir = './output';  // set filepath for file output
+    const filePath = path.join(dir, fileName);  // create the full file path if it doesnt exist
+
+    // Check if the directory exists, create it if it doesn't
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true });
+    }
+
+    // Write the data to the file in the specified directory
+    fs.writeFile(filePath, data, (err) => {
         if (err) {
-            console.error('Error when writing file: ', err);
-        // if no error occurs then output that it was successful
+            console.error('Error writing to file:', err);
         } else {
-            console.log('Successfully wrote to', fileName);
+            console.log('Successfully wrote to', filePath);
         }
     });
 }

@@ -1,8 +1,13 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-# title
+# README Creator
 
 ## Description
-blah blah blah
+A javascript file using node.js and inquirer to create a readme file
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+A short video showing utility:
+https://drive.google.com/file/d/14fM8o71F7nM_FaE7iN7EpxULvPQy2URf/view
 
 ## Table of Contents
 - [Description](#description)
@@ -15,20 +20,20 @@ blah blah blah
 
 ## Installation
 ```
-install it, dummy
+download and run the index.js file
 ```
 
 ## Usage
-to do your best
+to create a quality readme file using user prompts and input
 
 ## Contributing
-fix my errors
+please go to my github page under the link below
 
 ## License
-This project is licensed under the [object Object] license.
+This project has no license.
 
 ## Tests
-testing testing 1 2 3
+test by running and recording any error messages given in the terminal
 
 ## Questions
 If you have any questions please go to my github:
