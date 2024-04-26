@@ -29,6 +29,9 @@ to create a quality readme file using user prompts and input
 ## Contributing
 please go to my github page under the link below
 
+## Resources
+used https://shields.io/ to create icons
+
 ## License
 This project has no license.
 
